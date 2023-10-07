@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Prediction Result</h1>
+
+    <div class="prediction">
+        <h2>Prediction:</h2>
+        <p>{{ prediction }}</p>
+    </div>
+
+    <!-- Link to go back to the main page -->
+    <a href="/">Back to Home</a>
+</body>
+</html>
