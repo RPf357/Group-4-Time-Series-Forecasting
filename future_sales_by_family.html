@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Future Sales by Family</title>
+</head>
+<body>
+    <h1>Future Sales by Family</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Family</th>
+                <th>Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for family, sales in future_sales_by_family.items() %}
+                <tr>
+                    <td>{{ family }}</td>
+                    <td>{{ sales }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

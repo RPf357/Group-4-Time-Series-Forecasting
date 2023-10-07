@@ -1,0 +1,104 @@
+body {
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    background-color: #f5f5f5; /* Light gray background */
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+}
+
+
+.developers {
+    background-color: #f0f0f0; /* Light gray background for the developer names section */
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.developers h3 {
+    margin: 0; /* Remove margin for the "Developed by:" heading */
+}
+
+.developers ul {
+    list-style-type: none; /* Remove list bullet points */
+    padding: 0; /* Remove default padding for the list */
+}
+
+.developers li {
+    margin: 5px 0; /* Add spacing between developer names */
+}
+
+
+.project-info {
+    background-color: #008000; /* Green header */
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+form {
+    margin: 20px auto;
+    max-width: 400px; /* Limit form width */
+}
+
+label {
+    font-weight: bold;
+    display: block; /* Place labels on a new line */
+    margin-bottom: 5px; /* Add spacing below labels */
+}
+
+input {
+    padding: 10px;
+    width: 100%; /* Make inputs full-width */
+    margin-bottom: 15px; /* Add spacing below inputs */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0056b3; /* Darker blue button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #004080; /* Darker blue on hover */
+}
+
+.prediction {
+    background-color: #28a745; /* Green result box */
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: slideInUp 1s ease-in-out;
+}
+
+/* Keyframe animations remain the same */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html5>
+<html>
+<head>
+    <title>Time Series Forecasting</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Project Information -->
+
+    <a href="/future-sales-by-family">Future Sales by Family</a>
+    
+
+    <!-- Your HTML form for user input -->
+    <form method="POST" action="/predict">
+        <label for="input_date">Date:</label>
+        <input type="text" name="input_date" id="input_date" placeholder="Enter date (e.g., 2013-01-01)"><br>
+
+        <label for="input_store_nbr">Store Number:</label>
+        <input type="text" name="input_store_nbr" id="input_store_nbr" placeholder="Enter store number"><br>
+
+        <label for="input_family">Family:</label>
+        <input type="text" name="input_family" id="input_family" placeholder="Enter family (0-32)"><br>
+
+        <label for="input_onpromotion">On Promotion (0 or 1):</label>
+        <input type="text" name="input_onpromotion" id="input_onpromotion" placeholder="Enter 0 or 1"><br>
+
+        <label for="input_oil_price">Oil Price:</label>
+        <input type="text" name="input_oil_price" id="input_oil_price" placeholder="Enter oil price"><br>
+
+        <label for="input_type">Type:</label>
+        <input type="text" name="input_type" id="input_type" placeholder="Enter type"><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <div class="project-info">
+        <h1>Time Series Forecasting Project</h1>
+        <p>Developed by:</p>
+        <ul>
+            <li>Chandrika Chandra</li>
+            <li>Sravani Medarametla</li>
+            <li>Akhila Sannayila</li>
+            <li>Nithish Reddy Gangannagari</li>
+            <li>Ram Prasad Jampani</li>
+        </ul>
+        <p>Project Description:</p>
+        <p>This project demonstrates time series forecasting using an LSTM model.</p>
+        <p>GitHub Repository:</p>
+        <a href="https://github.com/RPf357/Group-4-Time-Series-Forecasting", target = "_blank">GitHub Repository</a>
+    </div>
+
+    <!-- Display prediction -->
+    {% if prediction %}
+    <div class="prediction">
+        <h2>Prediction:</h2>
+        <p>{{ prediction }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
+
